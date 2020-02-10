@@ -1,0 +1,50 @@
+@green: #568e3c;
+@yellow: #cc9d00;
+@orange: #f86438;
+
+* {
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+}
+h2 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  color: @orange;
+  text-align: center;
+  span {
+    color: @yellow;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+h2 {
+  color: @green;
+}
+
+.flex-container {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left, .right{
+  padding: 10px;
+}
+
+img {
+  height: 300px;
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px)  {
+  .flex-container {
+      margin: 0;
+      flex-direction: column;
+  }
+}
